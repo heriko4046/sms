@@ -1333,7 +1333,7 @@ keyauthapp = api(
     hash_to_check = getchecksum()
 )
 
-keyauthapp.license(license)
+KeyAuthApp.license(license)
 
     
 print('-- SMS NIGGA BOT --')
