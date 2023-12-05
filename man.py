@@ -1325,6 +1325,13 @@ class Smsman:
 
 license = input('Masukan License: ')
 
+def getchecksum():
+    md5_hash = hashlib.md5()
+    file = open(''.join(sys.argv), "rb")
+    md5_hash.update(file.read())
+    digest = md5_hash.hexdigest()
+    return digest
+    
 keyauthapp = api(
     name = "SMSBOT",
     ownerid = "sfwiIb0X5o",
